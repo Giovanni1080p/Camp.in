@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{height: 100vh;
+    display: grid; 
+    grid-template-areas: "main aside" ;
+    grid-auto-columns: 50% 50%;
+}
+main{
+    grid-area: main;
+    background-color: black;
+    padding: 2%;
+}
+aside{
+    grid-area: aside;
+    background-image: url(images/images/side-image-2x.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.form{
+    color: white;
+    position: relative;
+    left: 30vh;
+    top: 30vh;
+
+}
+strong{
+    display:flex;
+    font-size: 25px;
+    color: lightyellow;
+    align-items: center;
+    line-height: 0;
+    gap: 0.5em;
+}
+p{
+ color: gray;
+ font-size: 20px;
+}
+#mail, #senh{
+    background-color: black;
+    border: 2px solid yellow;
+    border-radius: 4px;
+    width: 300px;
+    height: 20px;
+    color: lightyellow;
+    padding: 10px;
+    margin-top:10px;
+}
+.senha{
+    color: yellow;
+    margin-left: 10%;
+}
+#submit{
+background-color:yellow;
+border: 1px solid yellow;
+border-radius: 4px;
+width: 323px;
+height: 50px;
+padding: 10px;
+font-weight: bold;
+}
+#submit:hover{
+    box-shadow: 1px 1px 1px lightyellow;
+    color: black;
+}
+.conta{
+    color:yellow;
+}
+a:link, a:visited{
+    background-color:none;
+    color: white;
+    text-decoration: none;
+}
+a:hover, a:active {
+    background-color: black;
+    
+  }
+@media (max-width: 1440px){
+.form{position: absolute;
+    left: 20vh;
+    top: 30vh;
+ }
+}
+@media (max-width: 1024px){
+    .form{position: absolute;
+        left: 12vh;
+        top: 20vh;
+     }
+}
+@media (max-width: 768px){
+    body{height: 100vh;
+        display: grid; 
+        grid-template-areas: "main aside" ;
+        grid-auto-columns: 100% 0%;
+    }
+    .form{position: absolute;
+        left: 30%;
+    
+     }
+}
+@media (max-width: 425px){
+    body{height: 100vh;
+        display: grid; 
+        grid-template-areas: "main aside" ;
+        grid-auto-columns: 100% 0%;
+    }
+    .form{position: absolute;
+        left: 11%;
+    
+     }
+}
+@media (max-width: 375px){
+    body{height: 100vh;
+        display: grid; 
+        grid-template-areas: "main aside" ;
+        grid-auto-columns: 100% 0%;
+    }
+    .form{position: absolute;
+        left: 6%;
+    
+     }
+}
